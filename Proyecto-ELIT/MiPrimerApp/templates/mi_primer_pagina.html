@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primer Página</title>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block page_content %}
+
     <h1>Hola mundo desde Django!</h1>
     <p>Somos el grupo: {{ nombre }}</p>
-</body>
-</html>
+    <button class="btn btn-success">Boton Boostrap 5</button>
+
+
+{% endblock %}
