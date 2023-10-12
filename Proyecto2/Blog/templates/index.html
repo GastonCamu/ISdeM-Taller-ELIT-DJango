@@ -16,7 +16,7 @@
                 {{ posteo.created_on.date }}|&nbsp;
                 Categorias:&nbsp;
                 
-                {% for categoria in posteo.categoria.all %}
+                {% for categoria in posteo.categorias.all %}
                     <a href="">{{ categoria.nombre }}</a>&nbsp;
                 {% endfor %}
             </small>
